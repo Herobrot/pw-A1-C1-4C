@@ -1,0 +1,66 @@
+form{
+    width: 45.9%;
+    background-color: brown;
+    display: grid;
+    align-items: center;
+    gap: 2;
+}
+
+form label{
+    padding-block: 1%;
+    margin: 1% auto;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: bold;
+    background-color: aquamarine;
+    width: 35%;
+}
+
+form label *{
+    margin: 3% 0;
+}
+
+form label input[type=text]{
+    font-size: 0.9vw;
+}
+
+main article{
+    background-color: rgb(131, 183, 20);
+    width: fit-content;
+    text-align: center;
+    padding: 1%;
+}
+
+main article h3{
+    font-size: 190%;
+    font-weight: 500;
+}
+
+main article p{
+    font-size: 120%;
+    font-weight: 300;
+}
+
+main table{
+    background-color: antiquewhite;
+    text-align: center;
+    border: 2px solid black;
+}
+
+main table tr th{
+    font-size: 140%;
+    border-inline: 2px solid black;
+}
+
+main table tr td{
+    font-size: 120%;
+    border-inline: 2px solid black;
+}
+
+main ol{
+    background-color: aqua;
+    width: fit-content;
+    padding: 2% 4%;
+    font-size: 250%;
+}

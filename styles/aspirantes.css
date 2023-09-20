@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+}
+
+* a{
+    text-decoration: none;
+    color: #1286D4;
+}
+
+* a:hover{
+    color: #1D1D1D;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 9000;
+    background-color: rgba(255, 255, 255);
+}
+
+header > nav{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3vw;
+    -webkit-box-shadow: 0px 5px 3px -2px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 5px 3px -2px rgba(0,0,0,0.32);
+    box-shadow: 0px 5px 3px -2px rgba(0,0,0,0.32);
+}
+
+header > nav > div#img{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    padding-left: 2%;
+}
+
+header > nav > div#img > img{
+    height: auto;
+    width: 75%;
+}
+
+header > nav > div#texto{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;    
+    width: 58%;
+}
+
+header > nav > div#texto > a{
+    padding: 0 1vw;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 100%;
+    display: inline-flex;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+header > nav > div#texto > a:hover{
+    color:rgb(252, 130, 42);
+}
+
+header > nav > div#iconos{    
+    width: 7%;
+    padding-right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+header > nav > div > img{
+    height: auto;
+    width: 25%;
+}
+
+body{
+    font-family: Kanit, Serif;
+}
+
+div#sidebar{
+    background-color: rgba(255, 255, 255, 0.925);
+    letter-spacing: 0.6px;
+    position: fixed;
+    z-index: 1000;
+    height: 100%;
+    width: 20%;
+    overflow-y: scroll;
+    left: 0;
+    top: 50px;
+    border-right: 1px solid rgba(150, 150, 150, 0.3);
+}
+
+div#sidebar > h2{
+    background-color: #bcbbba;
+    color: #ffffff;
+    padding: 5% 0;
+    text-align: center;
+    font-size: 22pt;
+    font-weight: 600;
+}
+
+div#sidebar > ul.sidebar-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div#sidebar > ul.sidebar-menu > li > a{
+    padding: .5em;
+    line-height: 40px;
+    cursor: pointer;
+    display: block;
+    color: #1D1D1D;
+    font-size: 15pt;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.3);
+    transition: background-color 0.8s, color 0.5s;
+    font-weight: 600;
+    text-decoration: none;
+    text-decoration-style: solid;
+}
+
+div#sidebar > ul.sidebar-menu > li > a:hover{
+    color: rgb(196, 29, 29);
+    background-color: rgba(208, 208, 208, 0.272);
+}
+
+main{
+    margin-left: 20%;
+    background-color: rgb(250, 250, 250);
+    color: rgb(29, 29, 29);
+    width: 80%;
+    position: relative;
+    top: 50px;
+}
+
+main > div#resultados{
+    width: 90%;
+    margin: 10px auto 0 auto;
+    padding-top: 1%;
+}
+
+main > div#resultados h1{
+    font-size: 30pt;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 32pt;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+main > div#resultados p.separador{
+    border-top: black;
+    border-top-width: 2px;
+    border-top-style: solid;
+    padding-top: 6px;
+    padding-bottom: 40px;
+}
+
+main > div#resultados > table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table > tbody{
+    width: 100%;
+}
+
+table > tbody > tr{
+    width: 100%;
+}
+
+table > tbody > tr td{
+    vertical-align:top;
+}
+
+table > tbody > tr > td h2{
+    text-align: center;
+    display: block;
+    font-size: 28pt;
+    line-height: 24pt;
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+table > tbody > tr > td > ul > li > a{
+    text-align: left;
+    text-decoration: none;
+    color: #1286D4;
+    font-weight: 600;
+    font-size: 15pt;
+    line-height: 1.25em;
+}
+
+div#convocatoria{
+    text-align: center;
+    padding-bottom: 2vw;
+    background-color: #1D1D1D;
+    color: #ffffff;
+    width: 100%;
+    margin: 3% auto 0 auto;
+}
+
+div#convocatoria h1{
+    padding-top: 1%;
+    font-family: kanit;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 30pt;
+    margin-bottom: 10px;
+    width: 100%;
+    line-height: 32pt;
+}
+
+div#convocatoria p.separador{
+    color:#ffffff;
+    margin: 0 auto;
+    width: 90%;
+    border-top-width: 2px;
+    border-top-style: solid;
+    padding-top: 6px;
+    padding-bottom: 4vw;
+}
+
+div#convocatoria > center img{
+    height: auto;
+    width: 70%;
+}
+
+div#convocatoria > div img{
+    height: auto;
+    width: 12%;
+}
+
+div#politica > h1{
+    text-align: center;
+    padding-top: 1%;
+    font-family: kanit;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 30pt;
+    margin-bottom: 10px;
+    width: 100%;
+    line-height: 32pt;
+}
+
+div#politica > p.separador{
+    color:black;
+    margin: 0 auto;
+    width: 90%;
+    border-top-width: 2px;
+    border-top-style: solid;
+    padding-top: 6px;
+    padding-bottom: 40px;
+}
+
+div#politica > span{
+    display: block;
+    font-family: kanit, serif;
+    line-height: 18pt;
+    letter-spacing: 0.6px;
+    width: 90%;
+    margin: 0 auto;
+    padding-block: 1%;
+    font-size: 1.3vw;
+}
+
+div#proceso{
+    text-align: center;
+    background-color: #1D1D1D;
+    color: #ffffff;
+    width: 100%;
+    margin: 3% auto 0 auto;
+    padding-bottom: 2vw;
+}
+
+div#proceso h1{
+    padding-top: 1%;
+    font-family: kanit;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 30pt;
+    margin-bottom: 10px;
+    width: 100%;
+    line-height: 32pt;
+}
+
+div#proceso p.separador{
+    color:#ffffff;
+    margin: 0 auto;
+    width: 90%;
+    border-top-width: 2px;
+    border-top-style: solid;
+    padding-top: 6px;
+    padding-bottom: 4vw;
+}
+
+div#proceso > center img{
+    height: auto;
+    width: 90%;
+}
+
+div#perfil > h1{
+    padding-top: 1%;
+    font-family: kanit;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 30pt;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+    line-height: 32pt;
+}
+
+div#perfil > p.separador{
+    color:black;
+    margin: 0 auto;
+    width: 90%;
+    border-top-width: 2px;
+    border-top-style: solid;
+    padding-top: 6px;
+    padding-bottom: 2vw;
+}
+
+div#perfil > p{
+    display: block;
+    font-family: kanit, serif;
+    line-height: 18pt;
+    letter-spacing: 0.6px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2vw;
+}
+
+div#opcion{
+    text-align: center;
+    background-color: #1D1D1D;
+    color: #ffffff;
+    width: 100%;
+    margin: 3% auto 0 auto;
+    padding-bottom: 3vw;
+}
+
+div#opcion > h1{
+    padding-top: 1%;
+    font-family: kanit;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 30pt;
+    margin-bottom: 10px;
+    width: 100%;
+    line-height: 32pt;
+}
+
+div#opcion > p.separador{
+    color:#ffffff;
+    margin: 0 auto;
+    width: 90%;
+    border-top-width: 2px;
+    border-top-style: solid;
+    padding-top: 6px;
+    padding-bottom: 4vw;
+}
+
+div#opcion > p{
+    text-align: left;
+    display: block;
+    font-family: kanit, serif;
+    line-height: 18pt;
+    letter-spacing: 0.6px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2vw;
+}
+
+div#requisitosDeIngreso > h1{
+    padding-top: 1%;
+    font-family: kanit;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 30pt;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+    line-height: 32pt;
+}
+
+div#requisitosDeIngreso > p.separador{
+    color:black;
+    margin: 0 auto;
+    width: 90%;
+    border-top-width: 2px;
+    border-top-style: solid;
+    padding-top: 6px;
+    padding-bottom: 4vw;
+}
+
+div#requisitosDeIngreso > p{
+    display: block;
+    font-family: kanit, serif;
+    line-height: 18pt;
+    letter-spacing: 0.6px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2vw;
+}
+
+div#requisitosDeIngreso > ol{
+    list-style-type: upper-roman;
+    display: block;
+    font-family: kanit, serif;
+    line-height: 18pt;
+    letter-spacing: 0.6px;
+    width: 86%;
+    margin: 2% auto;
+    font-size: 1.2vw;
+}
+
+div#requisitosDeIngreso > ol > li{
+    word-spacing: 2px;
+    line-height: 1.2em;
+}
+
+div#requisitosDeIngreso > b{
+    display: block;
+    font-family: kanit, serif;
+    line-height: 18pt;
+    letter-spacing: 0.6px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2vw;
+}
