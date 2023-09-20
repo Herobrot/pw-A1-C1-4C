@@ -198,7 +198,7 @@ div#marco > .dropdown *{
     box-sizing: border-box;
 }
 
-div#marco > .dropdown > .select{
+div#marco > .dropdown .select{
     display: flex;
     background: #3c3c3c;
     border-bottom: 1px solid rgba(150, 150, 150, 0.3);
@@ -212,32 +212,32 @@ div#marco > .dropdown > .select{
     font-weight: 600;
 }
 
-div#marco > .dropdown > .select:hover{
+div#marco > .dropdown .select:hover{
     background: #282828;
 }
 
-div#marco > .dropdown > .select-clicked{
+div#marco > .dropdown .select-clicked{
     background: rgb(173, 18, 9);
 }
 
-div#marco > .dropdown > .select-clicked:hover{
+div#marco > .dropdown .select-clicked:hover{
     background: rgb(173, 18, 9);
 }
 
-div#marco > .dropdown > .select > .mas{
+div#marco > .dropdown .select .mas{
     font-weight: bolder;
     font-size: 150%;
     font-family: Kansit, serif;
 }
 
-div#marco > .dropdown > .menu{
+div#marco > .dropdown .menu{
     background:rgba(0,0,0,0.1);
     opacity: 0;
     display: none;
     transition: display 0.3s;
 }
 
-div#marco > .dropdown > .menu > div{
+div#marco > .dropdown .menu div{
     background: rgba(0,0,0,0.1);
     font-size: 1.2em;
     margin-left: 20px;
@@ -248,43 +248,26 @@ div#marco > .dropdown > .menu > div{
     line-height: 30px;
 }
 
-div#marco > .dropdown > .menu > div > ol{
+div#marco > .dropdown .menu div ol{
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 140;
+    font-size: 100%;
 }
 
-div#marco > .dropdown > .menu > div span{
+div#marco > .dropdown .menu div span{
     font-size: 140%;
     padding: 0 1%;
 }
 
-div#marco > .dropdown > .menu > div a{
+div#marco > .dropdown .menu div a{
     padding-block: 1%;
     display: block;
     font-weight: bold;
     background: #ffffff;   
 }
 
-div#marco > .dropdown > .menu > div > table{
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    
-    cursor: default;
-}
-
-div#marco > .dropdown > .menu > div > table th, td{
-    vertical-align: top;
-    padding-inline: 1.5%;
-}
-
-div#marco > .dropdown > .menu > div > table p{
-    font-weight: bold;
-}
-
-div#marco > .dropdown > .menu-open{
+div#marco > .dropdown .menu-open{
     display: block;
     opacity: 1;
 }
@@ -374,10 +357,12 @@ div#comite > ol > li > a{
     cursor: pointer;
 }
 
+
+
 div#financieria > .dropdown{
     position: relative;
-    margin: 0 auto;
     width: 90%;
+    margin: 0 auto;
 }
 
 div#financieria > .dropdown *{
@@ -418,7 +403,6 @@ div#financieria > .dropdown > .select > .mas{
 
 div#financieria > .dropdown > .menu{
     background:rgba(0,0,0,0.1);
-    padding-top: 10px;
     opacity: 0;
     display: none;
     transition: display 0.3s;
@@ -426,9 +410,8 @@ div#financieria > .dropdown > .menu{
 
 div#financieria > .dropdown > .menu > div{
     background: rgba(0,0,0,0.1);
-    margin: 1px 0 0px 20px;
     font-size: 1.2em;
-    padding-left: 1vw;
+    margin-left: 20px;
     font-family: Kanit, Serif;
     letter-spacing: 0.5px;
     line-height: 1.8vw;
@@ -436,7 +419,40 @@ div#financieria > .dropdown > .menu > div{
     line-height: 30px;
 }
 
-div#financieria > .dropdown p#notaDropdown{
+div#financieria > .dropdown > .menu > div > ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+
+
+div#financieria > .dropdown > .menu > div > a{
+    padding-block: 1%;
+    display: block;
+    background: #ffffff;   
+}
+
+
+div#financieria > .dropdown > .menu > div > a > span{
+    font-size: 140%;
+    padding: 0 1%;
+    font-weight: bold;
+}
+
+div#financieria > .dropdown > .menu-open{
+    display: block;
+    opacity: 1;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .select{    
+    display: flex;
     background: #3c3c3c;
     border-bottom: 1px solid rgba(150, 150, 150, 0.3);
     color: #FAFAFA;
@@ -445,36 +461,213 @@ div#financieria > .dropdown p#notaDropdown{
     transition: background 0.6s;
     justify-content: space-between;
     align-items: center;
-    font-size: 110%;
+    font-size: 90%;
     font-weight: 600;
 }
 
-div#financieria > .dropdown p#notaDropdown:hover{
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .select:hover{
     background: #282828;
 }
 
-div#financieria > .dropdown > .menu > div a{
-    background: #f0f0f0;   
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .select-clicked{
+    background: rgb(173, 18, 9);
 }
 
-div#financieria > .dropdown > .menu > div > table{
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .select-clicked:hover{
+    background: rgb(173, 18, 9);
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .select > .mas{
+    font-weight: bolder;
+    font-size: 150%;
+    font-family: Kansit, serif;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu{
+    background:rgba(0,0,0,0.1);
+    opacity: 0;
+    display: none;
+    transition: display 0.3s;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > .dropdown{
+    position: relative;
     width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    
-    cursor: default;
+    margin: 0 auto;
 }
 
-div#financieria > .dropdown > .menu > div > table th, td{
-    vertical-align: top;
-    padding-inline: 1.5%;
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > .dropdown > .select{
+    display: flex;
+    background: #3c3c3c;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.3);
+    color: #FAFAFA;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.6s;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 80%;
+    font-weight: 600;
 }
 
-div#financieria > .dropdown > .menu > div > table p{
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > .dropdown > .select > .mas{
+    font-weight: bolder;
+    font-size: 150%;
+    font-family: Kansit, serif;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > .dropdown > .menu{
+    background:rgba(0,0,0,0.1);
+    opacity: 0;
+    display: none;
+    transition: display 0.3s;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > .dropdown > .menu > ol > li{
+
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > .dropdown > .menu-open{
+    display: block;
+    opacity: 1;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > a{
+    padding-block: 1%;
+    display: block;
+    background: #ffffff;   
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > a > span{
+    font-size: 140%;
+    padding: 0 1%;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div{
+    background: rgba(0,0,0,0.1);
+    font-size: 1.2em;
+    margin-left: 20px;
+    font-family: Kanit, Serif;
+    letter-spacing: 0.5px;
+    line-height: 1.8vw;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > span{
+    font-size: 140%;
+    padding: 0 1%;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol > li > a > span{
+    font-size: 120%;
+    font-weight: bold;
+    padding: 0 1%;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol > li > a{
+    padding-block: 1%;
+    display: block;
+    background: #ffffff;   
+    font-size: 90%;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > a{
+    padding-block: 1%;
+    display: block;
+    font-weight: bold;
+    background: #ffffff;   
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu-open{
+    display: block;
+    opacity: 1;
+}
+
+/*sub sub sub*/
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol > li > .dropdown{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol > li > .dropdown > .select{    
+    display: flex;
+    background: #3c3c3c;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.3);
+    color: #FAFAFA;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.6s;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 100%;
+    font-weight: 600;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol > li > .dropdown > .select:hover{
+    background: #282828;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol > li > .dropdown > .select-clicked{
+    background: rgb(173, 18, 9);
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol > li > .dropdown > .select-clicked:hover{
+    background: rgb(173, 18, 9);
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol > li > .dropdown > .select > .mas{
+    font-weight: bolder;
+    font-size: 100%;
+    font-family: Kansit, serif;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol > li > .dropdown > .menu{
+    background:rgba(0,0,0,0.1);
+    opacity: 0;
+    display: none;
+    transition: display 0.3s;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol > li > .dropdown > .menu > div{
+    background: rgba(0,0,0,0.1);
+    font-size: 1em;
+    margin-left: 20px;
+    font-family: Kanit, Serif;
+    letter-spacing: 0.5px;
+    line-height: 1.8vw;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 90%;
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol > li > .dropdown > .menu > div span{
+    font-size: 140%;
+    padding: 0 1%;
     font-weight: bold;
 }
 
-div#financieria > .dropdown > .menu-open{
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol > li > .dropdown > .menu > div a{
+    padding-block: 1%;
+    display: block;
+    background: #ffffff;   
+}
+
+div#financieria > .dropdown > .menu > div > ol > li > .dropdown > .menu > div > ol > li > .dropdown > .menu-open{
     display: block;
     opacity: 1;
 }
